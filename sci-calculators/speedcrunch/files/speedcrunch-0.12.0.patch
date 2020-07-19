@@ -1,0 +1,11 @@
+--- a/math/hmath.cpp
++++ b/math/hmath.cpp
+@@ -831,7 +831,7 @@ char* formatGeneral(cfloatnum x, int prec, int base = 10)
+     int expd = float_getexponent(x);
+ 
+     char* str;
+-    if (expd > 5)
++    if (expd > 25)
+         str = formatScientific(x, prec, base);
+     else if (expd < -4)
+         str = formatScientific(x, prec, base);

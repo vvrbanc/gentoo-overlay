@@ -1,0 +1,11 @@
+--- a/src/VBox/HostServices/SharedClipboard/VBoxSharedClipboardSvc-x11-stubs.cpp
++++ b/src/VBox/HostServices/SharedClipboard/VBoxSharedClipboardSvc-x11-stubs.cpp
+@@ -95,7 +95,7 @@ int SharedClipboardSvcImplDisconnect(PSHCLCLIENT pClient)
+  * @param pFormats              Clipboard formats the guest is offering.
+  */
+ int SharedClipboardSvcImplFormatAnnounce(PSHCLCLIENT pClient, PSHCLCLIENTCMDCTX pCmdCtx,
+-                                         PSHCLFORMATDATA pFormats)
++                                         PSHCLFORMATS pFormats)
+ {
+     RT_NOREF(pClient, pCmdCtx, pFormats);
+     return VINF_SUCCESS;

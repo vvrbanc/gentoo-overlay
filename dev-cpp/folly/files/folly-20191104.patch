@@ -1,0 +1,13 @@
+diff --git a/folly/container/detail/F14Table.h b/folly/container/detail/F14Table.h
+index a4395924e..8ff8e42bc 100644
+--- a/folly/container/detail/F14Table.h
++++ b/folly/container/detail/F14Table.h
+@@ -1859,7 +1859,7 @@ class F14Table : public Policy {
+         FOLLY_SAFE_DCHECK(
+             origChunkCount < std::numeric_limits<InternalSizeType>::max(), "");
+         chunkMask_ = static_cast<InternalSizeType>(origChunkCount - 1);
+-        F14LinkCheck<getF14IntrinsicsMode()>::check();
++//        F14LinkCheck<getF14IntrinsicsMode()>::check();
+       }
+ 
+       this->afterRehash(
