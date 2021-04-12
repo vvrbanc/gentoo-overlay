@@ -22,8 +22,8 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_compile() {
-    emake
-    use doc && emake -C doc 
+	emake
+	use doc && emake -C doc 
 }
 src_install() {
 	emake DESTDIR="${D}" PREFIX="/usr" install
