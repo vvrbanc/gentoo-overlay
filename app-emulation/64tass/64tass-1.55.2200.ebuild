@@ -10,15 +10,16 @@ SRC_URI="mirror://sourceforge/tass64/source/${P}-src.zip"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="amd64 x86"
-src_prepare() {
-	default
-
-	sed -i	-e 's:usr/local:usr:' \
-			-e 's:doc\/$(TARGET):doc\/$(TARGET)-'${PV}':' \
-			-e 's/-gzip.*//g' \
-			Makefile \
-		|| die "sed fix failed. Uh-oh..."
-}
 
 S=${S}-src
 
+src_prepare() {
+	default
+
+	# prevent man compression
+	sed -i -e 's/-gzip.*//g' Makefile || die "sed fix failed. Uh-oh..."
+}
+
+src_install() {
+	emake prefix="${ED}/usr" docdir="${ED}/usr/share/doc/${P}" install
+}
