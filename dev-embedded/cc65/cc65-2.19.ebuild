@@ -5,10 +5,11 @@ EAPI=7
 
 if [[ ${PV} != *9999* ]]; then
 	SRC_URI="https://github.com/cc65/cc65/archive/V${PV}.tar.gz  -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS="amd64"
 else
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/cc65/cc65.git"
+	KEYWORDS="~amd64"
 fi
 
 DESCRIPTION="A C compiler for 6502-based systems"
@@ -23,7 +24,7 @@ BDEPEND=""
 
 src_compile() {
 	emake
-	use doc && emake -C doc 
+	use doc && emake -C doc
 }
 src_install() {
 	emake DESTDIR="${D}" PREFIX="/usr" install
