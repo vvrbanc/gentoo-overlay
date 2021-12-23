@@ -16,7 +16,7 @@ KEYWORDS=~amd64
 
 DEPEND="dev-vcs/git
 	dev-libs/boost
-	sci-electronics/openocd"
+	dev-embedded/openocd"
 
 src_unpack() {
 	unpack $P.tar.gz
