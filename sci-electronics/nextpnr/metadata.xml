@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<use>
+	<flag name="ecp5">Add ECP5 support via prjtrellis</flag>
+	<flag name="ice40">Add ice40 support via icestorm</flag>
+</use>
+</pkgmetadata>
