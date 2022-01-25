@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit autotools
+inherit autotools flag-o-matic
 
 DESCRIPTION="Converts PSID and RSID files into C64 executables"
 HOMEPAGE="https://sourceforge.net/projects/psid64/"
@@ -13,13 +13,8 @@ LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="amd64 x86"
 
-#S=${S}-src
-
 src_prepare() {
 	AT_M4DIR="macros" eautoreconf
+	append-flags "-Wno-error"
 	default
-}
-
-src_compile() {
-	emake CFLAGS="${CFLAGS} -Wno-error"
 }
