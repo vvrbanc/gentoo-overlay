@@ -20,6 +20,6 @@ src_prepare() {
 	default
 }
 
-#src_install() {
-#	emake prefix="${ED}/usr" docdir="${ED}/usr/share/doc/${P}" install
-#}
+src_compile() {
+	emake CFLAGS="${CFLAGS} -Wno-error"
+}
