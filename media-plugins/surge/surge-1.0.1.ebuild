@@ -62,6 +62,6 @@ src_install() {
 	cd ${S}
 	cd build
 	make install
-	use resources || rm -rf ${D}/share
-	use standalone || rm -rf ${D}/bin
+	use resources || rm -rf ${D}/usr/share
+	use standalone || rm -rf ${D}/usr/bin
 }
