@@ -13,7 +13,7 @@ HOMEPAGE="https://vital.audio"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="+lv2 +vst +vst3 -standalone"
+IUSE="-lv2 -vst +vst3 -standalone"
 
 DEPEND="
 	media-libs/alsa-lib
