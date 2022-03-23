@@ -22,11 +22,11 @@ DEPEND="
 	media-libs/freetype
 	media-libs/alsa-lib
 	media-sound/jack2
+	media-libs/vst2sdk
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
 "
-#	dev-util/cmake
 
 src_configure() {
 	echo noop
