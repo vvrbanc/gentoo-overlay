@@ -42,6 +42,6 @@ mycmakeargs=(
 }
 
 src_install() {
-	dodir /lib64/vst2
-	cp -a ${BUILD_DIR}/vst2/OPNplug.so ${D}/lib64/vst2/
+	dodir /usr/lib64/vst
+	cp -a ${BUILD_DIR}/vst2/OPNplug.so ${D}/usr/lib64/vst/
 }

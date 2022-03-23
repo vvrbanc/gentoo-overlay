@@ -13,7 +13,7 @@ DESCRIPTION="Open source synthesizer plug-in"
 HOMEPAGE="https://surge-synthesizer.github.io/"
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="standalone resources" # The VST2 SDK is only available to licensed developers
+IUSE="-standalone -resources" # The VST2 SDK is only available to licensed developers
 KEYWORDS="amd64"
 
 #	x11-libs/cairo
@@ -49,7 +49,7 @@ src_configure() {
 	cd ${S}
 	mkdir build
 	cd build
-	cmake ${S} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${D}
+	cmake ${S} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${D}/usr
 }
 
 src_compile() {

@@ -38,6 +38,6 @@ src_compile() {
 }
 
 src_install() {
-	dodir /lib64/vst3
-	cp -a ${S}/src/tunefish4/Builds/LinuxMakefile/build/Tunefish4.vst3 ${D}/lib64/vst3/
+	dodir /usr/lib64/vst3
+	cp -a ${S}/src/tunefish4/Builds/LinuxMakefile/build/Tunefish4.vst3 ${D}/usr/lib64/vst3/
 }
