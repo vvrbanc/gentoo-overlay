@@ -42,5 +42,14 @@ src_compile() {
 
 src_install() {
 	dodir /usr/lib64/vst3
+	dodir /usr/share
 	cp -a ${S}/Builds/LinuxMakefile/build/OB-Xd.vst3 ${D}/usr/lib64/vst3/
+	cp -a ${S}/Documents/discoDSP/OB-Xd ${D}/usr/share/
+}
+
+pkg_postinst() {
+	ewarn "OB-Xd assets have been installed to /usr/share/OB-Xd"
+	ewarn "You must copy this directory to ${HOME}/Documents/discoDSP"
+	ewarn "or create a symlink Documents/discoDSP/OB-Xd -> /usr/share/OB-Xd "
+	ewarn " "
 }
