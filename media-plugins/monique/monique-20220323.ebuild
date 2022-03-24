@@ -31,4 +31,5 @@ BDEPEND="
 src_install() {
 	dodir /usr/lib64/vst3
 	cp -a ${BUILD_DIR}/MoniqueMonosynth_artefacts/Release/VST3/MoniqueMonosynth.vst3 ${D}/usr/lib64/vst3/
+	cp -a ${BUILD_DIR}/libs/oddsound-mts/liboddsound-mts.so ${D}/usr/lib64/
 }
