@@ -18,12 +18,11 @@ KEYWORDS="amd64"
 #RESTRICT=network-sandbox
 
 DEPEND="
-	x11-libs/libX11
-	x11-libs/libXrandr
-	x11-libs/libXinerama
-	x11-libs/libXcursor
-	media-libs/freetype
 	media-libs/alsa-lib
+	media-libs/freetype
+	x11-libs/libXcursor
+	x11-libs/libXinerama
+	x11-libs/libXrandr
 "
 RDEPEND="${DEPEND}"
 BDEPEND="

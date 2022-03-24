@@ -18,17 +18,17 @@ IUSE="-lv2 -vst +vst3 -standalone"
 DEPEND="
 	media-libs/alsa-lib
 	media-libs/freetype
-	x11-libs/libX11
-	x11-libs/libXrandr
-	x11-libs/libXinerama
 	x11-libs/libXcursor
+	x11-libs/libXinerama
 	virtual/opengl
 	dev-libs/glib
 "
+
 RDEPEND="${DEPEND}"
 BDEPEND="
 	dev-util/cmake
 "
+
 src_prepare() {
 	default
 	sed -i -e "s/Vital/Vial/g" Makefile

@@ -17,12 +17,12 @@ KEYWORDS="amd64"
 CMAKE_BUILD_TYPE="Release"
 
 DEPEND="
-	x11-libs/libX11
-	x11-libs/libXrandr
-	x11-libs/libXinerama
-	x11-libs/libXcursor
-	media-libs/freetype
 	media-libs/alsa-lib
+	media-libs/freetype
+	media-sound/jack2
+	x11-libs/libXcursor
+	x11-libs/libXinerama
+	x11-libs/libXrandr
 "
 RDEPEND="${DEPEND}"
 BDEPEND="

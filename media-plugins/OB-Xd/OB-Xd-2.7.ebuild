@@ -16,12 +16,11 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
-	x11-libs/libX11
-	x11-libs/libXrandr
-	x11-libs/libXinerama
-	x11-libs/libXcursor
-	media-libs/freetype
 	media-libs/alsa-lib
+	media-libs/freetype
+	x11-libs/libXcursor
+	x11-libs/libXinerama
+	x11-libs/libXrandr
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -35,7 +34,6 @@ src_prepare() {
 }
 
 src_compile() {
-#	export CONFIG=Release
 	cd ${S}/Builds/LinuxMakefile
 	emake VST3
 }
@@ -49,6 +47,7 @@ src_install() {
 
 pkg_postinst() {
 	ewarn "OB-Xd assets have been installed to /usr/share/OB-Xd"
+	ewarn " "
 	ewarn "You must copy this directory to ${HOME}/Documents/discoDSP"
 	ewarn "or create a symlink Documents/discoDSP/OB-Xd -> /usr/share/OB-Xd "
 	ewarn " "

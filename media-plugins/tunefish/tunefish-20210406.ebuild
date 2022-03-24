@@ -15,14 +15,12 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
-	x11-libs/libX11
-	x11-libs/libXrandr
-	x11-libs/libXinerama
-	x11-libs/libXcursor
-	media-libs/freetype
 	media-libs/alsa-lib
-	media-sound/jack2
+	media-libs/freetype
 	media-libs/vst2sdk
+	x11-libs/libXcursor
+	x11-libs/libXinerama
+	x11-libs/libXrandr
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
