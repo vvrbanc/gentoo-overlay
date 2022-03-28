@@ -23,6 +23,7 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_compile() {
+	MAKEOPTS+=" -j1"
 	emake
 	use doc && emake -C doc
 }
