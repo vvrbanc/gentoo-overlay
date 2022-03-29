@@ -14,16 +14,15 @@ HOMEPAGE="https://www.discodsp.com/obxd/"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="jack vst +vst3 au"
 
 DEPEND="
 	media-libs/alsa-lib
 	media-libs/freetype
+	media-libs/libglvnd[X]
+	media-libs/vst2sdk
 	x11-libs/libXcursor
 	x11-libs/libXinerama
 	x11-libs/libXrandr
-	media-libs/libglvnd[X]
-	media-libs/vst2sdk
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -33,10 +32,7 @@ src_prepare() {
 	default_src_prepare
 	unzip ${DISTDIR}/juce-6.1.6-linux.zip
 	cp -a JUCE/modules/* Modules/
-	use jack || sed -i -e 's/JUCE_JACK="1"/JUCE_JACK="0"/g' OB-Xd.jucer
-	use vst || sed -i -e 's/buildVST="1"/buildVST="0"/g' OB-Xd.jucer
-	use vst3 || sed -i -e 's/buildVST3="1"/buildVST3="0"/g' OB-Xd.jucer
-	use au || sed -i -e 's/buildAU="1"/buildAU="0"/g' OB-Xd.jucer
+	sed -i -e 's/JUCE_JACK="1"/JUCE_JACK="0"/g' OB-Xd.jucer
 	JUCE/Projucer --resave OB-Xd.jucer
 }
 
