@@ -15,6 +15,7 @@ KEYWORDS="amd64"
 
 DEPEND="
 	dev-cpp/folly
+	dev-cpp/fizz
 "
 
 S="${S}/wangle"
