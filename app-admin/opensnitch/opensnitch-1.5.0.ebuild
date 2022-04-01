@@ -48,6 +48,7 @@ DEPEND=">=dev-lang/go-1.13
 	net-libs/libnetfilter_queue
 	dev-go/go-protobuf
 	dev-go/protoc-gen-go-grpc
+	dev-python/notify2
 	"
 RDEPEND="
 	dev-python/grpcio-tools[${PYTHON_USEDEP}]
