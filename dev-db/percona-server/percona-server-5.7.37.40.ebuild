@@ -21,7 +21,7 @@ SRC_URI="https://www.percona.com/downloads/${MY_PN}-${MY_MAJOR_PV}/${MY_PN}-${MY
 HOMEPAGE="https://www.percona.com/software/mysql-database/percona-server"
 LICENSE="GPL-2"
 SLOT="5.7"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 
 DEPEND="
 	acct-group/mysql acct-user/mysql
