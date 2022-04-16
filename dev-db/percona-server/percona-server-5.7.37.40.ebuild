@@ -24,7 +24,9 @@ SLOT="5.7"
 KEYWORDS="~amd64"
 
 DEPEND="
-	acct-group/mysql acct-user/mysql
+	acct-group/mysql
+	acct-user/mysql
+	dev-db/mysql-init-scripts
 "
 
 src_unpack() {
@@ -84,4 +86,20 @@ src_configure() {
 src_install() {
 	cmake_src_install
 	rm -rf ${D}/usr/cmake
+	rm -rf ${D}/usr/bin/mysql_config
+	rm -rf ${D}/usr/bin/perror
+	rm -rf ${D}/usr/bin/my_print_defaults
+	rm -rf ${D}/usr/include/mysql/mysqld_error.h
+	rm -rf ${D}/usr/include/mysql/mysql_version.h
+	rm -rf ${D}/usr/include/mysql/errmsg.h
+	rm -rf ${D}/usr/include/mysql/my_list.h
+	rm -rf ${D}/usr/include/mysql/mysql_time.h
+	rm -rf ${D}/usr/include/mysql/my_command.h
+	rm -rf ${D}/usr/include/mysql/mysql_com.h
+	rm -rf ${D}/usr/include/mysql/mysql.h
+	rm -rf ${D}/usr/include/mysql/mysql/plugin_auth_common.h
+	rm -rf ${D}/usr/include/mysql/mysql/client_plugin.h
+	rm -rf ${D}/usr/share/man/man1/zlib_decompress*
+	rm -rf ${D}/usr/share/man/man1/perror*
+	rm -rf ${D}/usr/share/man/man1/my_print_defaults*
 }
