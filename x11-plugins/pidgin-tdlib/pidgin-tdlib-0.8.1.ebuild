@@ -14,6 +14,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
+	=dev-libs/tdlib-1.7.9
 "
 
 src_configure() {
