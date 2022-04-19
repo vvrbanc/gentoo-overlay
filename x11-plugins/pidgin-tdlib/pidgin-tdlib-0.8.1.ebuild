@@ -16,6 +16,7 @@ KEYWORDS="amd64"
 DEPEND="
 	=dev-libs/tdlib-1.7.9
 "
+RDEPEND="${DEPEND}"
 
 src_configure() {
 	mycmakeargs=(
