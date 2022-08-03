@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils git-r3 autotools cmake-utils
+inherit eutils git-r3 autotools
 
 DESCRIPTION="Facebook C++ networking library"
 HOMEPAGE="https://github.com/facebook/wangle"

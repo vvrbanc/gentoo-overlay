@@ -10,7 +10,7 @@ lt lv nb nl pl pt-BR pt-PT ro ru sk sv tr uz vi zh-CN
 
 CMAKE_MAKEFILE_GENERATOR=ninja
 
-inherit cmake-utils gnome2-utils
+inherit gnome2-utils
 
 DESCRIPTION="Fast and usable calculator for power users"
 HOMEPAGE="http://speedcrunch.org/"

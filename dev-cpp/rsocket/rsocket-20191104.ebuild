@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils git-r3 autotools cmake-utils
+inherit eutils git-r3 autotools
 
 DESCRIPTION="C++ implementation of RSocket"
 HOMEPAGE="https://github.com/rsocket/rsocket-cpp"

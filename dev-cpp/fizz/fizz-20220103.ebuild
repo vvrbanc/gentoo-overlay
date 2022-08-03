@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils git-r3 autotools cmake-utils
+inherit eutils git-r3 autotools
 
 DESCRIPTION="Facebook TLS 1.3 implementation"
 HOMEPAGE="https://github.com/facebookincubator/fizz"

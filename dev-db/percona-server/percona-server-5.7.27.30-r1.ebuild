@@ -11,7 +11,7 @@ PYTHON_COMPAT=( python2_7 )
 
 # Keeping eutils in EAPI=6 for emktemp in pkg_config
 
-inherit eapi7-ver cmake-utils eutils flag-o-matic linux-info \
+inherit eapi7-ver eutils flag-o-matic linux-info \
 	prefix python-any-r1 toolchain-funcs multilib-minimal
 
 MY_PV=$(ver_rs 3 '-')
