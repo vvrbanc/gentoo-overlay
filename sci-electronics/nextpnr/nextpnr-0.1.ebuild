@@ -1,7 +1,5 @@
 EAPI=7
 
-inherit cmake-utils
-
 GIT_COMMIT=fd2d4a8f999947ece42f791e19ddc4c2d8b823f2
 S=$WORKDIR/$PN-$GIT_COMMIT
 
