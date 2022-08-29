@@ -7,10 +7,10 @@ inherit desktop unpacker xdg
 
 DESCRIPTION="Multi-platform music-creation system for production, performance and DJing"
 HOMEPAGE="http://bitwig.com"
-SRC_URI="https://downloads.bitwig.com/4.3%20Beta%2010/bitwig-studio-4.3beta10.deb"
+SRC_URI="https://downloads.bitwig.com/stable/${PV}/${P}.deb"
 LICENSE="Bitwig"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 RESTRICT="mirror"
 
 IUSE="abi_x86_32 +jack cpu_flags_x86_sse4_1"
@@ -48,7 +48,6 @@ RDEPEND="${DEPEND}
 	x11-libs/xcb-util[abi_x86_32?]
 	x11-libs/xcb-util-wm[abi_x86_32?]
 	x11-libs/libXtst
-	!media-sound/bitwig-studio
 "
 
 QA_PREBUILT="
