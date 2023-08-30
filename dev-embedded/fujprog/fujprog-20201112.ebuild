@@ -1,5 +1,5 @@
 EAPI="7"
-inherit eutils git-r3 autotools
+inherit git-r3 autotools
 DESCRIPTION="ULX2S / ULX3S JTAG programmer"
 HOMEPAGE="https://github.com/kost/fujprog"
 EGIT_REPO_URI="https://github.com/kost/fujprog"

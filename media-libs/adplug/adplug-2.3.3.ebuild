@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-inherit eutils git-r3 autotools
+inherit git-r3 autotools
 
 DESCRIPTION="A free AdLib sound player library"
 HOMEPAGE="https://adplug.github.io/"

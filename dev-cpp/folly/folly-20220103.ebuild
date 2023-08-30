@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils git-r3 autotools
+inherit git-r3 autotools
 
 DESCRIPTION="Facebook Open Source C++ Library"
 HOMEPAGE="https://github.com/facebook/folly"

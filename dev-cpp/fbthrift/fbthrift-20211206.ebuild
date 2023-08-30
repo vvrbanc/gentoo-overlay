@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils git-r3 autotools
+inherit git-r3 autotools
 
 DESCRIPTION="Facebook Thrift is a serialization and RPC framework for service communication"
 HOMEPAGE="https://github.com/facebook/fbthrift"

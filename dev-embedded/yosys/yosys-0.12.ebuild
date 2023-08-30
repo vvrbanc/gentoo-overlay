@@ -4,7 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{8,9,10} )
-inherit eutils python-any-r1
+inherit python-any-r1
 
 ABC_COMMIT="85b74f68f19fc4857daba703f909a02410f04065"
 EGIT_COMMIT="2156e20db5b88ac7e3530abd2f27d27e12a412b2"

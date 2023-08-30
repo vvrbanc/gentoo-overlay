@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils git-r3 autotools
+inherit git-r3 autotools
 
 DESCRIPTION="C version of glm, C++ OpenGL Math library"
 HOMEPAGE="https://github.com/recp/cglm"

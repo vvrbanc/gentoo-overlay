@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-inherit eutils git-r3 autotools
+inherit git-r3 autotools
 
 DESCRIPTION="Binary I/O stream class library"
 HOMEPAGE="https://github.com/adplug/libbinio"
