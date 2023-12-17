@@ -6,7 +6,7 @@ EAPI=8
 inherit git-r3 cmake
 
 EGIT_REPO_URI="https://github.com/surge-synthesizer/surge.git"
-EGIT_COMMIT="ecf7fe632390e6539685c9538a968c3d367c0f2c"
+EGIT_COMMIT="20a8e16ab5cf2e92d718c16d42965622a9eb7db4"
 
 DESCRIPTION="Open source synthesizer plug-in"
 HOMEPAGE="https://surge-synthesizer.github.io/"
