@@ -48,7 +48,7 @@ BDEPEND="
 	system-llvm? ( llvm-core/llvm )
 	app-admin/chrpath
 	gnome-base/librsvg
-	sys-devel/lld
+	llvm-core/lld
 	dev-util/ccache
 "
 
