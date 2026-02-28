@@ -1,8 +1,8 @@
---- a/math/hmath.cpp
-+++ b/math/hmath.cpp
-@@ -831,7 +831,7 @@ char* formatGeneral(cfloatnum x, int prec, int base = 10)
+--- a/src/math/hmath.cpp
++++ b/src/math/hmath.cpp
+@@ -838,7 +838,7 @@ char* formatGeneral(cfloatnum x, int prec, int base = 10)
      int expd = float_getexponent(x);
- 
+
      char* str;
 -    if (expd > 5)
 +    if (expd > 25)
