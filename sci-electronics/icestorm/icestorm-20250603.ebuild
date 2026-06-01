@@ -15,7 +15,6 @@ DEPEND="dev-embedded/libftdi
 	dev-vcs/mercurial
 	media-gfx/graphviz
 	media-gfx/xdot
-	dev-qt/qtcore:5
 	dev-libs/boost"
 
 src_install() {
