@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>vvrbanc@reflected.net</email>
+	</maintainer>
+	<use>
+		<flag name="7zip">Pull in <pkg>app-arch/7zip</pkg>, loaded at runtime by the 7z archive plugin</flag>
+		<flag name="samba">Pull in <pkg>net-fs/samba</pkg> (libsmbclient), loaded at runtime by the Samba network plugin</flag>
+		<flag name="unrar">Pull in <pkg>app-arch/unrar</pkg> (libunrar), loaded at runtime by the RAR archive plugin</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">doublecmd/doublecmd</remote-id>
+		<remote-id type="sourceforge">doublecmd</remote-id>
+	</upstream>
+</pkgmetadata>

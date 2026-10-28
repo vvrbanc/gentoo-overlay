@@ -1,0 +1,14 @@
+TGrid.TrySmoothScrollBy is private in Lazarus < 4.0, so the thumbnail
+view cannot call it. Fall back to the default mouse wheel handling.
+
+--- a/src/fileviews/uthumbfileview.pas
++++ b/src/fileviews/uthumbfileview.pas
+@@ -671,7 +671,7 @@
+   else begin
+     WheelDelta:= -dgPanel.DefaultRowHeight;
+   end;
+-  Handled:= TThumbDrawGrid(dgPanel).TrySmoothScrollBy(0, WheelDelta);
++  Handled:= False;
+ end;
+ 
+ procedure TThumbFileView.CreateDefault(AOwner: TWinControl);
