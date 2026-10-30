@@ -6,7 +6,7 @@ EAPI=8
 inherit cmake xdg
 
 DESCRIPTION="Fast and usable calculator for power users"
-HOMEPAGE="https://github.com/heldercorreia/speedcrunch"
+HOMEPAGE="https://www.speedcrunch.org/"
 SRC_URI="https://github.com/heldercorreia/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2+"
