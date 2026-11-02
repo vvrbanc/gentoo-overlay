@@ -10,7 +10,7 @@ AUTOTOOLS_AUTO_DEPEND="no"
 
 inherit autotools desktop python-single-r1 xdg
 
-ARCHIVE_BUTTON_COMMIT="46cea33ae346ceee64091eed27f9e38f331c40a6"
+ARCHIVE_BUTTON_COMMIT="21aa4b599f444326c2120c0edf4c71b22cd72599"
 
 DESCRIPTION="An email client (and news reader) based on GTK+"
 HOMEPAGE="https://www.claws-mail.org/"
