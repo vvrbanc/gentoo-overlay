@@ -1,0 +1,23 @@
+diff --git a/src/summaryview.c b/src/summaryview.c
+index 323eb8e4d..700b52177 100644
+--- a/src/summaryview.c
++++ b/src/summaryview.c
+@@ -4074,6 +4074,18 @@ static void summary_set_row_marks(SummaryView *summaryview, GtkCMCTreeNode *row)
+ 
+ 	if (MSG_GET_COLORLABEL(flags))
+ 		summary_set_colorlabel_color(ctree, row, MSG_GET_COLORLABEL_VALUE(flags));
++	else if (MSG_IS_NEW(flags) || MSG_IS_UNREAD(flags)) {
++		/* custom-colors: show unread messages in color 13 (gold) */
++		GtkStyle *ustyle = gtk_style_copy(style ? style :
++				gtk_widget_get_style(GTK_WIDGET(ctree)));
++		GdkColor ucolor;
++		GdkRGBA urgba = colorlabel_get_color(12);
++
++		GTKUT_GDKRGBA_TO_GDKCOLOR(urgba, ucolor);
++		ustyle->text[GTK_STATE_NORMAL] = ucolor;
++		gtk_cmctree_node_set_row_style(ctree, row, ustyle);
++		g_object_unref(ustyle);
++	}
+ }
+ 
+ static void summary_mark_row(SummaryView *summaryview, GtkCMCTreeNode *row)
