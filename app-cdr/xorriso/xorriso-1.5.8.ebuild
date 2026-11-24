@@ -9,7 +9,7 @@ SRC_URI="mirror://gnu/xorriso/${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="acl readline xattr zlib"
 
 RDEPEND="
