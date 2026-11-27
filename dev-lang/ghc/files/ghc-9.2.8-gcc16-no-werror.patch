@@ -1,0 +1,14 @@
+Do not turn -Wunused-but-set-variable into an error: gcc-16 reports
+several of these in the RTS (NonMoving.c, NonMovingMark.c), which breaks the build.
+
+--- a/mk/warnings.mk	2026-11-27 01:18:22.577749064 +0100
++++ b/mk/warnings.mk	2026-11-27 01:18:28.214746730 +0100
+@@ -23,7 +23,7 @@
+ # we turn it on explicitly for consistency with other users
+ # Never set the flag on Windows as the host gcc may be too old.
+ ifneq "$(HostOS_CPP)" "mingw32"
+-SRC_CC_WARNING_OPTS += -Werror=unused-but-set-variable
++SRC_CC_WARNING_OPTS += -Wno-error=unused-but-set-variable
+ endif
+ 
+ # Suppress the warning about __sync_fetch_and_nand (#9678).
